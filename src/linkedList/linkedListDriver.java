@@ -122,6 +122,23 @@ public class linkedListDriver {
     System.out.println("\npDrome palindromic: " + ex_8_11.isPalindromic(pDrome));
 
 
+    ListNode<Integer> pivoting = new ListNode<>(4);
+    pivoting.next = new ListNode<>(2);
+    pivoting.next.next = new ListNode<>(3);
+    pivoting.next.next.next = new ListNode<>(1);
+    pivoting.next.next.next.next = new ListNode<>(9);
+    pivoting.next.next.next.next.next = new ListNode<>(5);
+    pivoting.next.next.next.next.next.next = new ListNode<>(5);
+    pivoting.next.next.next.next.next.next.next = new ListNode<>(12);
+    pivoting.next.next.next.next.next.next.next.next= new ListNode<>(8);
+    pivoting.next.next.next.next.next.next.next.next.next = new ListNode<>(10);
+    pivoting.next.next.next.next.next.next.next.next.next.next = new ListNode<>(3);
+    listPivoting_8_12 ex_8_12 = new listPivoting_8_12();
+    ListNode<Integer> pivotNode = ex_8_12.pivotList(pivoting, 5);
+    print(pivotNode);
+
+
+
 
 
   }

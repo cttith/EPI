@@ -33,13 +33,8 @@ public class myLinkedList<T> {
       // if list contains nodes already
     }else {
       tail.next = node;
-      ListNode<T> grabNewTail = node;
-      while (node != null) {
-        grabNewTail = node;
-        node = node.next;
-        size++;
-      }
-      tail = grabNewTail;
+      tail = node;
+      size++;
     }
 
   }
