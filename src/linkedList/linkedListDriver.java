@@ -1,5 +1,7 @@
 package linkedList;
 
+import java.util.List;
+
 public class linkedListDriver {
 
 
@@ -139,6 +141,21 @@ public class linkedListDriver {
 
 
 
+    // given 3 -> 1 -> 4
+    //       7 -> 0 -> 9
+    ListNode<Integer> numOne = new ListNode<>(3);
+    numOne.next = new ListNode<>(1);
+    numOne.next.next = new ListNode<>(4);
+    numOne.next.next.next = new ListNode<>(1);
+
+
+    ListNode<Integer> numTwo = new ListNode<>(7);
+    numTwo.next = new ListNode<>(0);
+    numTwo.next.next = new ListNode<>(9);
+
+    addListIntegers_8_13 ex_8_13 = new addListIntegers_8_13();
+    ListNode<Integer> res = ex_8_13.addLists(numOne, numTwo);
+    print(res);
 
 
   }

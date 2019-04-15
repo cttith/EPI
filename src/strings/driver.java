@@ -78,7 +78,7 @@ public class driver {
 
     System.out.println();
     nQueens backtrackPractice = new nQueens();
-    backtrackPractice.helper(5);
+    backtrackPractice.helper(4);
 
     sinusString_7_11 ex_7_11 = new sinusString_7_11();
     System.out.println(ex_7_11.returnSnakeString("HELLO_WORLD!"));
