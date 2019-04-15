@@ -14,6 +14,7 @@ public class cyclicRightShift_8_9 {
   // so we can split the LL into sublists
   // [head, len-kth node] [len-kth+1, tail]
   // new LL => len-kth+1 == new head, old tail points to old head, new tail == len-kth node
+  // pros: O(1) memory
   public ListNode<Integer> shiftKtoTheRight(ListNode<Integer> root, int k){
 
 //    // keep dummy for return

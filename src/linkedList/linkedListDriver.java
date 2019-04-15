@@ -98,6 +98,18 @@ public class linkedListDriver {
     cyclicRightShift_8_9 ex_8_9 = new cyclicRightShift_8_9();
     ListNode<Integer> newHead = ex_8_9.shiftKtoTheRight(duplicatesList, 5);
     print(newHead);
+
+    ListNode<Integer> evenOdd = new ListNode<>(0);
+    evenOdd.next = new ListNode<>(1);
+    evenOdd.next.next = new ListNode<>(2);
+    evenOdd.next.next.next = new ListNode<>(3);
+    evenOdd.next.next.next.next = new ListNode<>(4);
+    evenOdd.next.next.next.next.next = new ListNode<>(5);
+    evenOdd.next.next.next.next.next.next = new ListNode<>(6);
+    evenOddMerge_8_10 ex_8_10 = new evenOddMerge_8_10();
+    ListNode<Integer> eoMerge = ex_8_10.evenOddMerge(evenOdd);
+    print(eoMerge);
+
   }
 
 
@@ -107,5 +119,6 @@ public class linkedListDriver {
     myLinkedList<Integer> list = new myLinkedList<>();
     list.add(root);
     list.printList();
+    System.out.println();
   }
 }
