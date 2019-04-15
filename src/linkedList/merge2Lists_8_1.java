@@ -15,8 +15,6 @@ public class merge2Lists_8_1 {
 
 
     while(listOne != null && listTwo != null){
-      System.out.println("in while");
-
       int valOne = listOne.data;
       int valTwo = listTwo.data;
 

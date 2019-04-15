@@ -54,8 +54,5 @@ public class validIPAddress_7_10 {
       value[segment] = -1;                                                      // unchoose
     }
 
-
-
-
   }
 }
