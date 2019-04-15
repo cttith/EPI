@@ -110,6 +110,20 @@ public class linkedListDriver {
     ListNode<Integer> eoMerge = ex_8_10.evenOddMerge(evenOdd);
     print(eoMerge);
 
+    ListNode<Integer> pDrome = new ListNode<>(0);
+    pDrome.next = new ListNode<>(1);
+    pDrome.next.next = new ListNode<>(2);
+    pDrome.next.next.next = new ListNode<>(3);
+    pDrome.next.next.next.next = new ListNode<>(3);
+    pDrome.next.next.next.next.next = new ListNode<>(2);
+    pDrome.next.next.next.next.next.next = new ListNode<>(1);
+    pDrome.next.next.next.next.next.next.next = new ListNode<>(0);
+    singlyPalindromic_ex_8_11 ex_8_11 = new singlyPalindromic_ex_8_11();
+    System.out.println("\npDrome palindromic: " + ex_8_11.isPalindromic(pDrome));
+
+
+
+
   }
 
 
@@ -120,5 +134,16 @@ public class linkedListDriver {
     list.add(root);
     list.printList();
     System.out.println();
+    System.out.println();
+  }
+
+  public static int lengthList(ListNode<Integer> root){
+    int count = 0;
+    while (root != null){
+      count++;
+      root = root.next;
+    }
+
+    return count;
   }
 }

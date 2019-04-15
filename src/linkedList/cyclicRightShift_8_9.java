@@ -1,6 +1,8 @@
 package linkedList;
 
 
+import static linkedList.linkedListDriver.lengthList;
+
 public class cyclicRightShift_8_9 {
 
   // idea 1:
@@ -63,16 +65,5 @@ public class cyclicRightShift_8_9 {
 
   }
 
-
-
-  private int lengthList(ListNode<Integer> root){
-    int count = 0;
-    while (root != null){
-      count++;
-      root = root.next;
-    }
-
-    return count;
-  }
 
 }
