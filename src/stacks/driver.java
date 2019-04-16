@@ -14,6 +14,14 @@ public class driver {
     System.out.println("RPN of \"3\" => " + ex_9_2.RPN("3"));
     System.out.println("RPN OF \"1,1,+,-2,X\" => "+  ex_9_2.RPN("1,1,+,-2,X"));
 
+    System.out.println();
+    balancedParatheses_9_3 ex_9_3 = new balancedParatheses_9_3();
+    System.out.println("[()[]{()()}] is well formed : " + ex_9_3.isWellFormed("[()[]{()()}]"));
+    System.out.println("([]){()} is well formed : " + ex_9_3.isWellFormed("([]){()}"));
+    System.out.println("}{}{ is well formed: " + ex_9_3.isWellFormed("}{}{"));
+
+    
+
 
 
   }
